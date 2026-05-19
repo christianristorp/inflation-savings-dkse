@@ -125,9 +125,8 @@
 <div class="stats">
   <div class="stat"><div class="stat-value success">−5.37 SEK</div><div class="stat-label">DKSE total CPB reduction</div></div>
   <div class="stat"><div class="stat-value success">−0.35%</div><div class="stat-label">DKSE % of baseline</div></div>
-  <div class="stat"><div class="stat-value">−0.71 NOK</div><div class="stat-label">NO total CPB reduction</div></div>
-  <div class="stat"><div class="stat-value">−0.16%</div><div class="stat-label">NO % of baseline</div></div>
-</div>
+  <div class="stat"><div class="stat-value">−1.08 NOK</div><div class="stat-label">NO total CPB reduction</div></div>
+  <div class="stat"><div class="stat-value">−0.25%</div><div class="stat-label">NO % of baseline</div></div>
 
 <div class="section">
 <h2>DKSE — CPB impact by lever</h2>
@@ -188,18 +187,32 @@
     <tr class="highlight"><td>50% combined (DK + SE)</td><td class="right">−1.60</td><td class="right">−0.10%</td></tr>
   </tbody>
 </table>
+<h3>Why SE drives the majority of L3 savings</h3>
+<table>
+  <thead><tr><th>Metric</th><th class="right">DK</th><th class="right">SE</th></tr></thead>
+  <tbody>
+    <tr><td>Beef Mince cost per pick (SEK)</td><td class="right">38.33</td><td class="right">47.94</td></tr>
+    <tr><td>Hybrid Mince cost per pick (SEK)</td><td class="right">22.52</td><td class="right">22.52</td></tr>
+    <tr><td>Delta per pick (SEK)</td><td class="right">15.81</td><td class="right">25.42</td></tr>
+    <tr><td>Avg weekly mince recipe volume</td><td class="right">14,239</td><td class="right">12,850</td></tr>
+  </tbody>
+</table>
+<div class="callout">
+  <div class="callout-title">Interpretation</div>
+  SE has a 60% larger per-pick delta (25.42 vs 15.81 SEK) at similar volumes, making it the dominant contributor. A DK-only rollout captures only ~30% of the full L3 opportunity.
+</div>
 </div>
 
 <div class="section">
 <h2>L4 — Onion reduction on 4p</h2>
 <table>
-  <thead><tr><th>Market</th><th class="right">CPB impact</th><th class="right">CPB impact (%)</th></tr></thead>
+  <thead><tr><th>Market</th><th>SKU codes</th><th class="right">CPB impact</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
-    <tr><td>DKSE</td><td class="right">−0.22 SEK</td><td class="right">−0.01%</td></tr>
-    <tr><td>NO</td><td class="right">N/A</td><td class="right">N/A</td></tr>
+    <tr><td>DKSE</td><td>PHF-44-10037-2, PHF-44-10036-2</td><td class="right">−0.22 SEK</td><td class="right">−0.01%</td></tr>
+    <tr><td>NO</td><td>PHF-33-10037-2, PHF-33-10036-2</td><td class="right">−0.37 NOK</td><td class="right">−0.09%</td></tr>
   </tbody>
 </table>
-<p style="font-size:0.85rem; color:var(--text-muted)">NO has no qualifying 4p onion recipes with the target SKUs at 2+ picks.</p>
+<p style="font-size:0.85rem; color:var(--text-muted)">NO uses DC = MO (Moss); DKSE uses DC = SK. SKU prefix 33 = NO, 44 = DKSE.</p>
 </div>
 
 <div class="section">
@@ -208,43 +221,43 @@
   <thead><tr><th>Lever</th><th class="right">CPB impact (NOK)</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
     <tr><td>L2 — Salmon (every 2nd)</td><td class="right">−0.71</td><td class="right">−0.16%</td></tr>
-    <tr><td>L4 — Onion reduction</td><td class="right">N/A</td><td class="right">N/A</td></tr>
-    <tr class="total"><td>Total</td><td class="right">−0.71</td><td class="right">−0.16%</td></tr>
+    <tr><td>L4 — Onion reduction</td><td class="right">−0.37</td><td class="right">−0.09%</td></tr>
+    <tr class="total"><td>Total</td><td class="right">−1.08</td><td class="right">−0.25%</td></tr>
   </tbody>
 </table>
 </div>
 
 <div class="section">
-<h2>Shrimp volume share (DKSE menu, quarterly)</h2>
-<p>Proportion of planned recipe slots containing shrimp/prawn ingredients.</p>
+<h2>Shrimp — menu share vs. volume share (DKSE, quarterly)</h2>
+<p>Menu share = proportion of planned recipe slots with shrimp. Volume share = shipped/forecasted shrimp recipes / total volume.</p>
 <div class="bar-chart">
-  <div class="bar-row"><span class="bar-label">2025-Q1</span><div class="bar-track"><div class="bar-fill" style="width:86.9%">5.75%</div></div></div>
-  <div class="bar-row"><span class="bar-label">2025-Q2</span><div class="bar-track"><div class="bar-fill" style="width:77.2%">5.11%</div></div></div>
-  <div class="bar-row"><span class="bar-label">2025-Q3</span><div class="bar-track"><div class="bar-fill" style="width:100%">6.62%</div></div></div>
-  <div class="bar-row"><span class="bar-label">2025-Q4</span><div class="bar-track"><div class="bar-fill" style="width:20.7%">1.37%</div></div></div>
-  <div class="bar-row"><span class="bar-label">2026-Q1</span><div class="bar-track"><div class="bar-fill" style="width:41.8%">2.77%</div></div></div>
-  <div class="bar-row"><span class="bar-label">2026-Q2</span><div class="bar-track"><div class="bar-fill" style="width:62.1%">4.11%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2025-Q1</span><div class="bar-track"><div class="bar-fill" style="width:86.9%">Menu 5.75% / Vol 5.67%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2025-Q2</span><div class="bar-track"><div class="bar-fill" style="width:77.2%">Menu 5.11% / Vol 4.65%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2025-Q3</span><div class="bar-track"><div class="bar-fill" style="width:100%">Menu 6.62% / Vol 4.95%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2025-Q4</span><div class="bar-track"><div class="bar-fill" style="width:20.7%">Menu 1.37% / Vol 1.27%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2026-Q1</span><div class="bar-track"><div class="bar-fill" style="width:41.8%">Menu 2.77% / Vol 3.42%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2026-Q2</span><div class="bar-track"><div class="bar-fill" style="width:62.1%">Menu 4.11% / Vol 3.05%</div></div></div>
 </div>
 <table>
-  <thead><tr><th>Quarter</th><th class="right">Shrimp recipe slots</th><th class="right">Total recipe slots</th><th class="right">Volume share (%)</th></tr></thead>
+  <thead><tr><th>Quarter</th><th class="right">Menu share (%)</th><th class="right">Volume share (%)</th><th>Source</th></tr></thead>
   <tbody>
-    <tr><td>2025-Q1</td><td class="right">33</td><td class="right">574</td><td class="right">5.75%</td></tr>
-    <tr><td>2025-Q2</td><td class="right">31</td><td class="right">607</td><td class="right">5.11%</td></tr>
-    <tr><td>2025-Q3</td><td class="right">43</td><td class="right">650</td><td class="right">6.62%</td></tr>
-    <tr><td>2025-Q4</td><td class="right">11</td><td class="right">805</td><td class="right">1.37%</td></tr>
-    <tr><td>2026-Q1</td><td class="right">27</td><td class="right">975</td><td class="right">2.77%</td></tr>
-    <tr><td>2026-Q2</td><td class="right">43</td><td class="right">1,045</td><td class="right">4.11%</td></tr>
+    <tr><td>2025-Q1</td><td class="right">5.75%</td><td class="right">5.67%</td><td>Actuals</td></tr>
+    <tr><td>2025-Q2</td><td class="right">5.11%</td><td class="right">4.65%</td><td>Actuals</td></tr>
+    <tr><td>2025-Q3</td><td class="right">6.62%</td><td class="right">4.95%</td><td>Actuals</td></tr>
+    <tr><td>2025-Q4</td><td class="right">1.37%</td><td class="right">1.27%</td><td>Actuals</td></tr>
+    <tr><td>2026-Q1</td><td class="right">2.77%</td><td class="right">3.42%</td><td>Actuals</td></tr>
+    <tr><td>2026-Q2</td><td class="right">4.11%</td><td class="right">3.05%</td><td>Actuals (partial, W14–W21)</td></tr>
   </tbody>
 </table>
 <div class="callout">
   <div class="callout-title">Shrimp trend</div>
-  Shrimp dropped sharply in 2025-Q4 (1.4%) and is recovering through 2026, reaching 4.1% in Q2. The pre-Q4 average was 5.8%.
+  Shrimp volume share dropped to 1.3% in Q4 2025 and is recovering (3.4% in Q1 2026). Volume share generally tracks at or below menu share, indicating shrimp recipes are selected at slightly lower rates than average slots. 2026-Q2 is partial — only W14–W21 actuals captured.
 </div>
 </div>
 
 <div class="callout success">
   <div class="callout-title">Key takeaway</div>
-  L1 and L3 account for 85% of DKSE CPB reduction. For NO, only L2 (Salmon) applies but with a relatively larger % impact (0.16% vs. 0.04% in DKSE).
+  L1 and L3 account for 85% of DKSE CPB reduction. For NO, L2 + L4 (with corrected PHF-33 SKUs, DC = MO) delivers −1.08 NOK (−0.25%). The L3 DK/SE split reveals SE drives 70% of mince savings via a higher per-pick cost delta.
 </div>
 
 <div class="footer">
