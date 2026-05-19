@@ -157,6 +157,7 @@
 
 <div class="section">
 <h2>L1 — Beef steak replacement (slot 27, DKSE)</h2>
+<p style="font-size:0.85rem; color:var(--text-muted)">Replace the weekly beef steak recipe on slot 27 with a recipe at the volume-weighted average cost of all other menu recipes.</p>
 <table>
   <thead><tr><th>Scenario</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
@@ -168,6 +169,7 @@
 
 <div class="section">
 <h2>L2 — Salmon → hot pulled salmon (slot 26)</h2>
+<p style="font-size:0.85rem; color:var(--text-muted)">Substitute the salmon protein SKU on slot 26 with Hot Pulled Salmon (25.83 SEK/unit) at a reduced frequency (every 2nd or 3rd week).</p>
 <table>
   <thead><tr><th>Market</th><th>Scenario</th><th class="right">CPB impact</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
@@ -181,6 +183,7 @@
 
 <div class="section">
 <h2>L3 — Hybrid mince scenarios (DKSE)</h2>
+<p style="font-size:0.85rem; color:var(--text-muted)">Replace the Beef Mince SKU with Hybrid Mince (22.52 SEK/unit) across all recipes containing beef mince, at varying DK/SE adoption levels.</p>
 <p>Country-level split: DK at 100% contributes −0.48 SEK; SE at 100% contributes −2.72 SEK.</p>
 <table>
   <thead><tr><th>Scenario</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th></tr></thead>
@@ -210,6 +213,7 @@
 
 <div class="section">
 <h2>L4 — Onion reduction on 4p</h2>
+<p style="font-size:0.85rem; color:var(--text-muted)">Remove one onion pick from all 4-person recipes where the onion SKU currently has 2+ picks, reducing from 2 onions to 1.</p>
 <table>
   <thead><tr><th>Market</th><th>SKU codes</th><th class="right">CPB impact</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
@@ -231,6 +235,38 @@
     <tr class="total"><td>Total</td><td class="right">−1.08</td><td class="right">−0.35%</td></tr>
   </tbody>
 </table>
+</div>
+
+<div class="section">
+<h2>L5 — White fish → shrimp</h2>
+<p style="font-size:0.85rem; color:var(--text-muted)">Replace white fish protein SKUs (cod, haddock, hake) with shrimp SKUs on 2 additional slots per week until shrimp menu share returns to 2025-Q3 levels (6.6%).</p>
+<table>
+  <thead><tr><th>Parameter</th><th class="right">Value</th></tr></thead>
+  <tbody>
+    <tr><td>Current shrimp slots/week (2026-Q2)</td><td class="right">3.3</td></tr>
+    <tr><td>Target shrimp slots/week (6.6% of 80)</td><td class="right">5.3</td></tr>
+    <tr><td>White fish slots to replace</td><td class="right">2</td></tr>
+    <tr><td>Avg volume per slot/week</td><td class="right">~2,750 recipes</td></tr>
+    <tr><td>Corrected baseline CPB</td><td class="right">258.23 SEK</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead><tr><th>Size</th><th class="right">White fish (SEK)</th><th class="right">Shrimp (SEK)</th><th class="right">Delta (SEK)</th></tr></thead>
+  <tbody>
+    <tr><td>2p</td><td class="right">39.71</td><td class="right">18.82</td><td class="right">−20.89</td></tr>
+    <tr><td>3p</td><td class="right">67.16</td><td class="right">29.45</td><td class="right">−37.71</td></tr>
+    <tr><td>4p</td><td class="right">79.42</td><td class="right">37.16</td><td class="right">−42.26</td></tr>
+    <tr class="highlight"><td>Avg (equal weight)</td><td class="right">62.10</td><td class="right">28.48</td><td class="right">−33.62</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead><tr><th>Market</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th></tr></thead>
+  <tbody>
+    <tr class="highlight"><td>DKSE</td><td class="right">−2.84</td><td class="right">−1.10%</td></tr>
+    <tr><td>NO (already at target)</td><td class="right">~0</td><td class="right">~0%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.8rem; color:var(--text-muted)"><strong>Assumptions:</strong> Protein-only swap (white fish SKU → shrimp SKU, all other ingredients constant). Volume per slot uniform. Size distribution equal-weighted. NO gap is 0.22pp (&lt;1 slot), impact negligible.</p>
 </div>
 
 <div class="section">
