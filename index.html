@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inflation Savings — Initiative Sizing (DKSE 2026)</title>
+<title>Inflation Savings — Initiative Sizing (DKSE + NO, 2026)</title>
 <style>
   :root {
     --bg: #1a1a2e;
@@ -80,149 +80,175 @@
     font-size: 0.9rem;
   }
   .callout-title { font-weight: 600; color: var(--accent); margin-bottom: 0.25rem; }
+  .callout.success { border-left-color: var(--success); }
+  .callout.success .callout-title { color: var(--success); }
   ul { margin: 0.5rem 0 0.75rem 1.5rem; }
   li { margin-bottom: 0.35rem; }
   li li { color: var(--text-muted); }
   .bar-chart { margin: 1rem 0; }
   .bar-row { display: flex; align-items: center; margin-bottom: 0.5rem; gap: 0.75rem; }
-  .bar-label { width: 200px; font-size: 0.85rem; text-align: right; flex-shrink: 0; }
+  .bar-label { width: 220px; font-size: 0.85rem; text-align: right; flex-shrink: 0; }
   .bar-track { flex: 1; height: 28px; background: var(--surface); border-radius: 4px; overflow: hidden; position: relative; }
   .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; display: flex; align-items: center; padding: 0 8px; font-size: 0.75rem; font-weight: 600; color: var(--bg); min-width: fit-content; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
   .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--text-muted); }
 </style>
 </head>
 <body>
 
-<h1>Inflation savings — initiative sizing (DKSE 2026)</h1>
+<h1>Inflation savings — initiative sizing (DKSE + NO, 2026)</h1>
 
 <div class="meta">
-  <span class="meta-label">Scope:</span><span>DKSE — 2026 YTD (W03–W20)</span>
-  <span class="meta-label">Created:</span><span>2026-05-12</span>
+  <span class="meta-label">Scope:</span><span>DKSE + NO — 2026 YTD (W03–W20)</span>
+  <span class="meta-label">Updated:</span><span>2026-05-19</span>
   <span class="meta-label">Team:</span><span>MSP Nordics</span>
   <span class="meta-label">Author:</span><span>Christian Jensen</span>
 </div>
 
+<div class="two-col">
+  <div>
+    <h3>DKSE baseline</h3>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">1,538.15</div><div class="stat-label">Baseline CPB (SEK)</div></div>
+      <div class="stat"><div class="stat-value">65,073</div><div class="stat-label">Boxes/week</div></div>
+    </div>
+  </div>
+  <div>
+    <h3>NO baseline</h3>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">435.21</div><div class="stat-label">Baseline CPB (NOK)</div></div>
+      <div class="stat"><div class="stat-value">19,020</div><div class="stat-label">Boxes/week</div></div>
+    </div>
+  </div>
+</div>
+
 <div class="stats">
-  <div class="stat"><div class="stat-value">1,538.15</div><div class="stat-label">Baseline CPB (SEK)</div></div>
-  <div class="stat"><div class="stat-value">65,073</div><div class="stat-label">Avg boxes/week</div></div>
-  <div class="stat"><div class="stat-value">32</div><div class="stat-label">Weeks remaining</div></div>
-  <div class="stat"><div class="stat-value success">−5.37 SEK</div><div class="stat-label">Total CPB reduction</div></div>
-  <div class="stat"><div class="stat-value success">11.18M</div><div class="stat-label">Rest-of-2026 savings (SEK)</div></div>
+  <div class="stat"><div class="stat-value success">−5.37 SEK</div><div class="stat-label">DKSE total CPB reduction</div></div>
+  <div class="stat"><div class="stat-value success">−0.35%</div><div class="stat-label">DKSE % of baseline</div></div>
+  <div class="stat"><div class="stat-value">−0.71 NOK</div><div class="stat-label">NO total CPB reduction</div></div>
+  <div class="stat"><div class="stat-value">−0.16%</div><div class="stat-label">NO % of baseline</div></div>
 </div>
 
 <div class="section">
-<h2>Savings by lever (SEK/week)</h2>
+<h2>DKSE — CPB impact by lever</h2>
 <div class="bar-chart">
-  <div class="bar-row"><span class="bar-label">L1 — Beef steak</span><div class="bar-track"><div class="bar-fill" style="width:100%">191,741</div></div></div>
-  <div class="bar-row"><span class="bar-label">L3 — Hybrid mince (50%)</span><div class="bar-track"><div class="bar-fill" style="width:54.2%">103,867</div></div></div>
-  <div class="bar-row"><span class="bar-label">L2 — Salmon (every 2nd)</span><div class="bar-track"><div class="bar-fill" style="width:20.4%">39,138</div></div></div>
-  <div class="bar-row"><span class="bar-label">L4 — Onion reduction</span><div class="bar-track"><div class="bar-fill" style="width:7.6%">14,494</div></div></div>
+  <div class="bar-row"><span class="bar-label">L1 — Beef steak</span><div class="bar-track"><div class="bar-fill" style="width:100%">−2.95 SEK</div></div></div>
+  <div class="bar-row"><span class="bar-label">L3 — Hybrid mince (50%)</span><div class="bar-track"><div class="bar-fill" style="width:54.2%">−1.60 SEK</div></div></div>
+  <div class="bar-row"><span class="bar-label">L2 — Salmon (every 2nd)</span><div class="bar-track"><div class="bar-fill" style="width:20.3%">−0.60 SEK</div></div></div>
+  <div class="bar-row"><span class="bar-label">L4 — Onion reduction</span><div class="bar-track"><div class="bar-fill" style="width:7.5%">−0.22 SEK</div></div></div>
 </div>
 </div>
 
 <div class="section">
-<h2>Consolidated summary (central scenarios)</h2>
+<h2>DKSE consolidated (central scenarios)</h2>
 <table>
-  <thead><tr><th>Lever</th><th class="right">Savings/week (SEK)</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th><th class="right">Rest-of-2026 (SEK)</th></tr></thead>
+  <thead><tr><th>Lever</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
-    <tr><td>L1 — Beef steak (every wk)</td><td class="right">191,741</td><td class="right">−2.95</td><td class="right">−0.19%</td><td class="right">6,135,702</td></tr>
-    <tr><td>L3 — Hybrid mince (50%)</td><td class="right">103,867</td><td class="right">−1.60</td><td class="right">−0.10%</td><td class="right">3,323,735</td></tr>
-    <tr><td>L2 — Salmon (every 2nd)</td><td class="right">39,138</td><td class="right">−0.60</td><td class="right">−0.04%</td><td class="right">1,252,413</td></tr>
-    <tr><td>L4 — Onion reduction</td><td class="right">14,494</td><td class="right">−0.22</td><td class="right">−0.01%</td><td class="right">463,800</td></tr>
-    <tr class="total"><td>Total</td><td class="right">349,239</td><td class="right">−5.37</td><td class="right">−0.35%</td><td class="right">11,175,649</td></tr>
+    <tr><td>L1 — Beef steak (every wk)</td><td class="right">−2.95</td><td class="right">−0.19%</td></tr>
+    <tr><td>L3 — Hybrid mince (50%)</td><td class="right">−1.60</td><td class="right">−0.10%</td></tr>
+    <tr><td>L2 — Salmon (every 2nd)</td><td class="right">−0.60</td><td class="right">−0.04%</td></tr>
+    <tr><td>L4 — Onion reduction</td><td class="right">−0.22</td><td class="right">−0.01%</td></tr>
+    <tr class="total"><td>Total</td><td class="right">−5.37</td><td class="right">−0.35%</td></tr>
   </tbody>
 </table>
-<ul>
-  <li>L1 and L3 together account for 85% of total savings (295,607 SEK/week combined vs. 349,239 total).</li>
-  <li>L2 and L4 contribute the remaining 15% but serve different strategic purposes.</li>
-</ul>
 </div>
 
 <div class="section">
-<h2>L1 — Beef steak replacement (slot 27)</h2>
-<p>Slot 27 hosts a premium beef steak recipe weekly from W15 onwards. Savings from replacing with a menu-average recipe.</p>
+<h2>L1 — Beef steak replacement (slot 27, DKSE)</h2>
 <table>
-  <thead><tr><th>Scenario</th><th class="right">Savings/week (SEK)</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th><th class="right">Rest-of-2026 (SEK)</th></tr></thead>
+  <thead><tr><th>Scenario</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
-    <tr><td>Every week (full removal)</td><td class="right">191,741</td><td class="right">−2.95</td><td class="right">−0.19%</td><td class="right">6,135,702</td></tr>
-    <tr><td>Every 2nd week</td><td class="right">95,870</td><td class="right">−1.47</td><td class="right">−0.10%</td><td class="right">3,067,851</td></tr>
+    <tr><td>Every week (full removal)</td><td class="right">−2.95</td><td class="right">−0.19%</td></tr>
+    <tr><td>Every 2nd week</td><td class="right">−1.47</td><td class="right">−0.10%</td></tr>
   </tbody>
 </table>
 </div>
 
 <div class="section">
 <h2>L2 — Salmon → hot pulled salmon (slot 26)</h2>
-<p>Replacing salmon protein SKU with Hot Pulled Salmon (25.83 SEK/unit) at reduced frequencies.</p>
 <table>
-  <thead><tr><th>Scenario</th><th class="right">Savings/week (SEK)</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th><th class="right">Rest-of-2026 (SEK)</th></tr></thead>
+  <thead><tr><th>Market</th><th>Scenario</th><th class="right">CPB impact</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
-    <tr><td>Every 2nd week (central)</td><td class="right">39,138</td><td class="right">−0.60</td><td class="right">−0.04%</td><td class="right">1,252,413</td></tr>
-    <tr><td>Every 3rd week (conservative)</td><td class="right">26,092</td><td class="right">−0.40</td><td class="right">−0.03%</td><td class="right">834,941</td></tr>
+    <tr><td>DKSE</td><td>Every 2nd week (central)</td><td class="right">−0.60 SEK</td><td class="right">−0.04%</td></tr>
+    <tr><td>DKSE</td><td>Every 3rd week (conservative)</td><td class="right">−0.40 SEK</td><td class="right">−0.03%</td></tr>
+    <tr><td>NO</td><td>Every 2nd week (central)</td><td class="right">−0.71 NOK</td><td class="right">−0.16%</td></tr>
+    <tr><td>NO</td><td>Every 3rd week (conservative)</td><td class="right">−0.47 NOK</td><td class="right">−0.11%</td></tr>
   </tbody>
 </table>
 </div>
 
 <div class="section">
-<h2>L3 — Beef mince → hybrid mince</h2>
-<p>Switching Beef Mince to Hybrid Mince (22.521 SEK/unit). 50% adoption is the central scenario.</p>
+<h2>L3 — Hybrid mince scenarios (DKSE)</h2>
+<p>Country-level split: DK at 100% contributes −0.48 SEK; SE at 100% contributes −2.72 SEK.</p>
 <table>
-  <thead><tr><th class="right">Adoption</th><th class="right">Savings/week (SEK)</th><th class="right">CPB impact (SEK)</th><th class="right">Rest-of-2026 (SEK)</th></tr></thead>
+  <thead><tr><th>Scenario</th><th class="right">CPB impact (SEK)</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
-    <tr><td class="right">10%</td><td class="right">20,773</td><td class="right">−0.32</td><td class="right">664,747</td></tr>
-    <tr><td class="right">20%</td><td class="right">41,547</td><td class="right">−0.64</td><td class="right">1,329,494</td></tr>
-    <tr><td class="right">30%</td><td class="right">62,320</td><td class="right">−0.96</td><td class="right">1,994,241</td></tr>
-    <tr><td class="right">40%</td><td class="right">83,093</td><td class="right">−1.28</td><td class="right">2,658,988</td></tr>
-    <tr class="highlight"><td class="right">50%</td><td class="right">103,867</td><td class="right">−1.60</td><td class="right">3,323,735</td></tr>
-    <tr><td class="right">60%</td><td class="right">124,640</td><td class="right">−1.91</td><td class="right">3,988,482</td></tr>
-    <tr><td class="right">70%</td><td class="right">145,413</td><td class="right">−2.23</td><td class="right">4,653,229</td></tr>
-    <tr><td class="right">80%</td><td class="right">166,187</td><td class="right">−2.55</td><td class="right">5,317,976</td></tr>
-    <tr><td class="right">90%</td><td class="right">186,960</td><td class="right">−2.87</td><td class="right">5,982,723</td></tr>
+    <tr><td>100% DK / 0% SE</td><td class="right">−0.48</td><td class="right">−0.03%</td></tr>
+    <tr><td>80% DK / 20% SE</td><td class="right">−0.93</td><td class="right">−0.06%</td></tr>
+    <tr class="highlight"><td>50% combined (DK + SE)</td><td class="right">−1.60</td><td class="right">−0.10%</td></tr>
   </tbody>
 </table>
 </div>
 
 <div class="section">
 <h2>L4 — Onion reduction on 4p</h2>
-<p>Removing 1 unnecessary onion pick from 4p recipes where onion SKUs have 2+ picks.</p>
-<div class="stats">
-  <div class="stat"><div class="stat-value">14,494</div><div class="stat-label">Savings/week (SEK)</div></div>
-  <div class="stat"><div class="stat-value">−0.22</div><div class="stat-label">CPB impact (SEK)</div></div>
-  <div class="stat"><div class="stat-value">463,800</div><div class="stat-label">Rest-of-2026 (SEK)</div></div>
-</div>
-</div>
-
-<div class="callout">
-  <div class="callout-title">Key takeaway</div>
-  L1 and L3 together account for 85% of total savings. L1 alone is 55% of the opportunity. L4 is operationally trivial with zero customer-facing risk.
+<table>
+  <thead><tr><th>Market</th><th class="right">CPB impact</th><th class="right">CPB impact (%)</th></tr></thead>
+  <tbody>
+    <tr><td>DKSE</td><td class="right">−0.22 SEK</td><td class="right">−0.01%</td></tr>
+    <tr><td>NO</td><td class="right">N/A</td><td class="right">N/A</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.85rem; color:var(--text-muted)">NO has no qualifying 4p onion recipes with the target SKUs at 2+ picks.</p>
 </div>
 
 <div class="section">
-<h2>Appendix: Parameters and assumptions</h2>
+<h2>NO consolidated</h2>
 <table>
-  <thead><tr><th>Parameter</th><th>Value</th><th>Source</th></tr></thead>
+  <thead><tr><th>Lever</th><th class="right">CPB impact (NOK)</th><th class="right">CPB impact (%)</th></tr></thead>
   <tbody>
-    <tr><td>Hot Pulled Salmon price</td><td>25.83 SEK/unit</td><td>Procurement static prices</td></tr>
-    <tr><td>Hybrid Mince price</td><td>22.521 SEK/unit</td><td>Procurement static prices</td></tr>
-    <tr><td>Static price window</td><td>Current week +13 to +26</td><td>Forward-looking procurement window</td></tr>
-    <tr><td>Baseline period</td><td>W03–W20 2026</td><td>YTD actuals</td></tr>
-    <tr><td>L1 period</td><td>W15–W20 2026</td><td>Slot-27 active period</td></tr>
-    <tr><td>L2/L3/L4 period</td><td>W03–W20 2026</td><td>Full YTD</td></tr>
-    <tr><td>Markets</td><td>DK + SE combined</td><td>All costs in SEK</td></tr>
-    <tr><td>Pick logic (2p)</td><td>1 pick per recipe</td><td>Standard servings mapping</td></tr>
-    <tr><td>Pick logic (3p/4p)</td><td>2 picks per recipe</td><td>Standard servings mapping</td></tr>
+    <tr><td>L2 — Salmon (every 2nd)</td><td class="right">−0.71</td><td class="right">−0.16%</td></tr>
+    <tr><td>L4 — Onion reduction</td><td class="right">N/A</td><td class="right">N/A</td></tr>
+    <tr class="total"><td>Total</td><td class="right">−0.71</td><td class="right">−0.16%</td></tr>
   </tbody>
 </table>
-<h3>Data sources</h3>
-<ul>
-  <li>public_one_product_meal_live.facts_recipes_ordered_enriched</li>
-  <li>public_edw_base_grain_live.recipe_csku_ingredient_picklist</li>
-  <li>public_edw_business_mart_live.menu_recipe_csku_ingredient_picklist</li>
-  <li>public_procurement_services_live.staticprices_enriched</li>
-</ul>
+</div>
+
+<div class="section">
+<h2>Shrimp volume share (DKSE menu, quarterly)</h2>
+<p>Proportion of planned recipe slots containing shrimp/prawn ingredients.</p>
+<div class="bar-chart">
+  <div class="bar-row"><span class="bar-label">2025-Q1</span><div class="bar-track"><div class="bar-fill" style="width:86.9%">5.75%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2025-Q2</span><div class="bar-track"><div class="bar-fill" style="width:77.2%">5.11%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2025-Q3</span><div class="bar-track"><div class="bar-fill" style="width:100%">6.62%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2025-Q4</span><div class="bar-track"><div class="bar-fill" style="width:20.7%">1.37%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2026-Q1</span><div class="bar-track"><div class="bar-fill" style="width:41.8%">2.77%</div></div></div>
+  <div class="bar-row"><span class="bar-label">2026-Q2</span><div class="bar-track"><div class="bar-fill" style="width:62.1%">4.11%</div></div></div>
+</div>
+<table>
+  <thead><tr><th>Quarter</th><th class="right">Shrimp recipe slots</th><th class="right">Total recipe slots</th><th class="right">Volume share (%)</th></tr></thead>
+  <tbody>
+    <tr><td>2025-Q1</td><td class="right">33</td><td class="right">574</td><td class="right">5.75%</td></tr>
+    <tr><td>2025-Q2</td><td class="right">31</td><td class="right">607</td><td class="right">5.11%</td></tr>
+    <tr><td>2025-Q3</td><td class="right">43</td><td class="right">650</td><td class="right">6.62%</td></tr>
+    <tr><td>2025-Q4</td><td class="right">11</td><td class="right">805</td><td class="right">1.37%</td></tr>
+    <tr><td>2026-Q1</td><td class="right">27</td><td class="right">975</td><td class="right">2.77%</td></tr>
+    <tr><td>2026-Q2</td><td class="right">43</td><td class="right">1,045</td><td class="right">4.11%</td></tr>
+  </tbody>
+</table>
+<div class="callout">
+  <div class="callout-title">Shrimp trend</div>
+  Shrimp dropped sharply in 2025-Q4 (1.4%) and is recovering through 2026, reaching 4.1% in Q2. The pre-Q4 average was 5.8%.
+</div>
+</div>
+
+<div class="callout success">
+  <div class="callout-title">Key takeaway</div>
+  L1 and L3 account for 85% of DKSE CPB reduction. For NO, only L2 (Salmon) applies but with a relatively larger % impact (0.16% vs. 0.04% in DKSE).
 </div>
 
 <div class="footer">
-  MSP Nordics · Inflation Savings Initiative Sizing · Generated 2026-05-12
+  MSP Nordics · Inflation Savings Initiative Sizing · Updated 2026-05-19
 </div>
 
 </body>
